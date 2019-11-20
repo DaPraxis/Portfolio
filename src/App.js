@@ -10,7 +10,7 @@ import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
-
+import Fade from 'react-reveal/Fade';
 
 class App extends React.Component {
   
@@ -28,6 +28,7 @@ class App extends React.Component {
         text: 'Fourth-year undergraduate, major in computer science & statistics in the University of Toronto. Specializing in Machine Learning & Software Engineering & Web-Development',
         title2: 'Work Hard & Be Nice to People',
         intro: "My name is:",
+        text2: 'Toronto, ON, Canada',
         about:{
           title: '1. About Me ---------',
           text: 'Hello! I am Haoyan (Max) Jiang, a fourth year undergraduate major in computer science & statistics in the University of Toronto. I develope websites with modern frameworks such as React.js and Spring; digging into data mining and machine learning with rigorous statistic models and tools such as Python, Numpy, R, Scikilearn and pandas.',
@@ -56,7 +57,7 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-          
+          <Fade>
           <Navbar sticky = "top" className="border-bottom" bg="white" expand="lg">
             <Navbar.Brand>HJ</Navbar.Brand>
 
@@ -73,7 +74,7 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-
+          </Fade>
           <Route path="/" exact render={() => <HomePage home = {this.state.home}/>} />
           <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />
