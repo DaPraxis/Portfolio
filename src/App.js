@@ -32,7 +32,23 @@ class App extends React.Component {
         about:{
           title: '1. About Me ---------',
           text: 'Hello! I am Haoyan (Max) Jiang, a fourth year undergraduate major in computer science & statistics in the University of Toronto. I develope websites with modern frameworks such as React.js and Spring; digging into data mining and machine learning with rigorous statistic models and tools such as Python, Numpy, R, Scikilearn and pandas.',
-          text2: 'Some technologies I am using: '
+          text2: 'Some technologies I am using: ',
+          // activeTab: '1',
+          skills: 
+            [
+              {
+                Category:'Front-End',
+                Content:['React.js', 'Express', 'HTML/(S)CSS/JavaScript']
+              },
+              {
+                Category:'Programming Landuages',
+                Content:['Java', 'Python', 'C/C++', 'JavaScript (ES6+)', 'Racket', 'Haskell']
+              },
+              {
+                Category:'Data Science',
+                Content:['R', 'Python/Pandas/Numpy/Scipy','Scikitlearn']
+              }
+            ]
         },
         experience:{
           title: '2. Experience ---------'

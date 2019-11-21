@@ -12,6 +12,10 @@
   background-color: #05A58D!important;
 }
 
+/* .skill-body{
+  font-size: calc(10px + 2vmin);
+} */
+
 
 .App-header {
   background-color: #282c34;
@@ -79,11 +83,39 @@
   color: #05A58D
 }
   
+.Nav{
+  -webkit-transition-duration: 0.4s; 
+  transition-duration: 0.4s;
+  cursor: pointer;
+	display: inline-block;
+	position: relative;
+	padding: 0.8em 1.6em;
+	letter-spacing: .20em;
+	outline: none;
+	cursor: pointer;
+  font-weight: bold;
+}
+
+
+.NavTab{
+  color: #01395e;
+  background-color: #05A58D;
+}
+
+
+.NavTab:hover {
+  background-color:#01395e;
+  color: #05A58D
+}
+
+.list{
+  list-style: none;
+}
+
 .intro-contain{
   padding-top: 6%;
   padding-bottom: 5%;
 }
-	
 
 
 @keyframes App-logo-spin {

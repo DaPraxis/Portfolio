@@ -14,10 +14,10 @@ function HomePage(props) {
             <div>
                 <Jumbotron className="jumbotron-fluid p-0 m-0 homePage-jumbo" id="Intro">
                     <Container fluid={true} className="intro-contain">
-                        <Hero prop={props.home} title={props.home.title} title2={props.home.title2} subTitle={props.home.subTitle} text={props.home.text} intro={props.home.intro} text2={props.home.text2}/>
+                        <Hero title={props.home.title} title2={props.home.title2} subTitle={props.home.subTitle} text={props.home.text} intro={props.home.intro} text2={props.home.text2}/>
                         <Row className="justify-content-center">
                             <Col md={8} sm={12}>
-                            <button class="button button-home">
+                            <button className="button button-home">
                                 Get In Touch
                             </button>
                             </Col>
