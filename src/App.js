@@ -16,7 +16,11 @@ class App extends React.Component {
   
   constructor(props) {
     super(props);
+    this.handleScroll = this.handleScroll.bind(this);
     this.state = {
+      slide: 0,  // How much should the Navbar slide up or down
+      lastScrollY: 0,  // Keep track of current position in state
+      hidden: false,
       title: 'Max Jiang',
       headerLinks: [
         { title: 'Home', path: '/' },
@@ -31,9 +35,14 @@ class App extends React.Component {
         text2: 'Toronto, ON, Canada',
         about:{
           title: '1. About Me ---------',
-          text: 'Hello! I am Haoyan (Max) Jiang, a fourth year undergraduate major in computer science & statistics in the University of Toronto. I develope websites with modern frameworks such as React.js and Spring; digging into data mining and machine learning with rigorous statistic models and tools such as Python, Numpy, R, Scikilearn and pandas.',
-          text2: 'Some technologies I am using: ',
-          // activeTab: '1',
+          text: 'Hello! I am Haoyan (Max) Jiang, a fourth year undergraduate major in computer science & statistics in the University of Toronto. I develope websites with modern frameworks such as React.js and Spring; digging into data mining and machine learning with rigorous statistic models and tools such as Python, Numpy, R, Scikilearn and pandas.'
+          // text2: 'Some technologies I am using: '
+        },
+        experience:{
+          title: '2. Experience ---------'
+        },
+        project:{
+          title: '3. Project ---------',
           skills: 
             [
               {
@@ -50,12 +59,6 @@ class App extends React.Component {
               }
             ]
         },
-        experience:{
-          title: '2. Experience ---------'
-        },
-        project:{
-          title: '3. Project ---------'
-        },
         contact:{
           title: '4. Contact Me ----------'
         }
@@ -69,12 +72,39 @@ class App extends React.Component {
     }
   }
 
+  componentWillMount() {
+    // When this component mounts, begin listening for scroll changes
+    window.addEventListener('scroll', this.handleScroll);
+  }
+
+  componentWillUnmount() {
+    // If this component is unmounted, stop listening
+    window.removeEventListener('scroll', this.handleScroll);
+  }
+
+  handleScroll = () => {
+    const { lastScrollY } = this.state; 
+    const currentScrollY = window.scrollY;
+
+
+    if (currentScrollY > lastScrollY) {
+      this.setState({ slide: '-60px' });
+    } else {
+      this.setState({ slide: '0px' });
+    }
+    this.setState({ lastScrollY: currentScrollY });
+  };
+
+
   render() {
     return (
       <Router>
         <Container className="p-0" fluid={true}>
-          <Fade>
-          <Navbar sticky = "top" className="border-bottom" bg="white" expand="lg">
+          <Navbar fixed='top' style={{
+          transform: `translate(0, ${this.state.slide})`,
+          transition: 'transform 90ms linear',
+        }}
+          className="border-bottom" bg="white" expand="lg" hidden={this.state.hidden}>
             <Navbar.Brand>HJ</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
@@ -90,7 +120,6 @@ class App extends React.Component {
               </Nav>
             </Navbar.Collapse>
           </Navbar>
-          </Fade>
           <Route path="/" exact render={() => <HomePage home = {this.state.home}/>} />
           <Route path="/about" render={() => <AboutPage title={this.state.about.title} />} />
           <Route path="/contact" render={() => <ContactPage title={this.state.contact.title} />} />

@@ -7,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import AboutMe from "../components/AboutMe";
 import Fade from 'react-reveal/Fade';
+import Project from '../components/Project';
 
 function HomePage(props) {
     return(
@@ -44,6 +45,7 @@ function HomePage(props) {
                 <Jumbotron className="jumbotron-fluid p-0 m-0 homePage-jumbo" id="Project">
                     <Container fluid={true} className="intro-contain">
                         <Hero subTitle={props.home.project.title}/>
+                        <Project project = {props.home.project}/>
                     </Container>
                 </Jumbotron>
             </div>
