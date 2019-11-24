@@ -1,5 +1,6 @@
 .App {
   text-align: center;
+  font-family: sans-serif;
 }
 
 .App-logo {
@@ -37,6 +38,7 @@
 }
 
 .hero-intro{
+  padding-top: 3%;
   font-size: calc(10px + 2vmin);
   padding-bottom: 0%;
   color: #01395e;
@@ -96,17 +98,50 @@
   font-weight: bold;
 }
 
+a[href^="https"]{
+  text-decoration: underline;
+  /* color: #0b6aa8; */
+}
 
-.NavTab{
+.Ex{
+  margin-top: 2%;
+}
+
+ul {
+  list-style: none; /* Remove default bullets */
+}
+
+ul li::before {
+  content: "&";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+  color: #01395e; /* Change the color */
+  font-weight: bold; /* If you want it to be bold */
+  display: inline-block; /* Needed to add space between the bullet and the text */
+  width: 1em; /* Also needed for space (tweak if needed) */
+  margin-left: -1em; /* Also needed for space (tweak if needed) */
+}
+
+.tab{
   color: #01395e;
   background-color: #05A58D;
+  font-size: 12 px;
+  font-weight: bold;
 }
 
 
-.NavTab:hover {
+.tab:focus:hover{
+  background-color:#01395e;
+  color: #F0F8FF;
+}
+
+.tab:active{
   background-color:#01395e;
   color: #05A58D
 }
+
+/* .tab:hover{
+  background-color:#01395e;
+  color: #05A58D
+} */
 
 .list{
   list-style: none;

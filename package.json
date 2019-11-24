@@ -14,6 +14,8 @@
     "react-scripts": "3.0.1",
     "react-scroll": "^1.7.14",
     "react-spring": "^8.0.27",
+    "react-tabs-redux": "^4.0.0",
+    "react-web-tabs": "^1.0.1",
     "smooth-scroll": "^16.1.0"
   },
   "scripts": {

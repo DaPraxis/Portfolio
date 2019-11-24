@@ -11,7 +11,7 @@ import Card from './Card';
 function AboutMe(props) {
     return(
             <Row className="justify-content-center py-0">
-                <Col md={{ span: 6, offset: 2 }} className = "justify-content">
+                <Col md={{ span: 6, offset: 1 }} className = "justify-content">
                     <Hero subTitle={props.about.title} text2={props.about.text2} text={props.about.text}/>  
                 </Col>
                 <Col>

@@ -39,25 +39,36 @@ class App extends React.Component {
           // text2: 'Some technologies I am using: '
         },
         experience:{
-          title: '2. Experience ---------'
-        },
-        project:{
-          title: '3. Project ---------',
+          title: '2. Experience ---------',
           skills: 
             [
               {
-                Category:'Front-End',
-                Content:['React.js', 'Express', 'HTML/(S)CSS/JavaScript']
+                Category:'UofT IML Lab',
+                Title: 'Software Developer & 3D Modeling',
+                Location: '@University of Toronto Interactive Media Lab',
+                Time: '04/2019 – 09/2019',
+                Link: "https://imedia.mie.utoronto.ca/",
+                Content:
+                ['Driving Simulation Game for Elder People; Engine building, \
+                game logic and modeling of real-time driving experiences on web-serving applications using Babylon.js',
+                'Building and importing 3D models for famous scenic views in the world using Blender',
+                'Data collection and analysis with MongoDB, using learning algorism to analyze player’s brain functionality',
+                'Working with elder people in medical institutes to improve game design and game play experiences']
               },
               {
-                Category:'Programming Landuages',
-                Content:['Java', 'Python', 'C/C++', 'JavaScript (ES6+)', 'Racket', 'Haskell']
-              },
-              {
-                Category:'Data Science',
-                Content:['R', 'Python/Pandas/Numpy/Scipy','Scikitlearn']
+                Category:'UofT IML Lab',
+                Title: 'Junior Full Stack Developer',
+                Location: '@University of Toronto Interactive Media Lab',
+                Time: '04/2019 – 09/2019',
+                Link: "https://imedia.mie.utoronto.ca/",
+                Content:['Managing back-end performance, administration and data collections using MongoDB',
+                'Responsive web design, exposure to React.js implementation, Node.js',
+                'Interactive dashboard design and data representation for future researches']
               }
             ]
+        },
+        project:{
+          title: '3. Project ---------'
         },
         contact:{
           title: '4. Contact Me ----------'
