@@ -14,19 +14,38 @@ code {
 
 
 .g-card {
-  margin: 5%;
+  margin:5%;
   padding: 10%;
+  border-radius : 10%
+  /* margin-right: 5%;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  padding-right: 10%;
+  padding-left: 10%;
+  padding-bottom: 8%; */
 }
 
 
 .g-card-image {
-  border-radius: 10px;
+  border-radius: 8%;
   width: 100%;
-  box-shadow: 0px 0px 3px 1px #ccc;
+  box-shadow: 0px 0px 2px 2px #ccc;
+  cursor: pointer;
+  position: relative;
+}
+
+.g-card-image:hover {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  opacity: 0.6;
+  filter: alpha(opacity=100);
+  box-shadow: 10px 10px grey;
 }
 
 
 .g-card-info {
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
   margin-top: 10px;
   min-height: 100px;
 }
