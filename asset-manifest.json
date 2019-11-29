@@ -1,20 +1,26 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.eec31f4f.chunk.css",
-    "main.js": "/Portfolio/static/js/main.84cf187a.chunk.js",
-    "main.js.map": "/Portfolio/static/js/main.84cf187a.chunk.js.map",
+    "main.css": "/Portfolio/static/css/main.02d583c5.chunk.css",
+    "main.js": "/Portfolio/static/js/main.766c1424.chunk.js",
+    "main.js.map": "/Portfolio/static/js/main.766c1424.chunk.js.map",
     "runtime~main.js": "/Portfolio/static/js/runtime~main.132fbc8c.js",
     "runtime~main.js.map": "/Portfolio/static/js/runtime~main.132fbc8c.js.map",
     "static/css/2.7b128773.chunk.css": "/Portfolio/static/css/2.7b128773.chunk.css",
-    "static/js/2.abd076f1.chunk.js": "/Portfolio/static/js/2.abd076f1.chunk.js",
-    "static/js/2.abd076f1.chunk.js.map": "/Portfolio/static/js/2.abd076f1.chunk.js.map",
+    "static/js/2.30931627.chunk.js": "/Portfolio/static/js/2.30931627.chunk.js",
+    "static/js/2.30931627.chunk.js.map": "/Portfolio/static/js/2.30931627.chunk.js.map",
     "index.html": "/Portfolio/index.html",
-    "precache-manifest.d5039d978167c3c3f25a2027bf777572.js": "/Portfolio/precache-manifest.d5039d978167c3c3f25a2027bf777572.js",
+    "precache-manifest.903830e055e5693d3885f0d19e56d0f8.js": "/Portfolio/precache-manifest.903830e055e5693d3885f0d19e56d0f8.js",
     "service-worker.js": "/Portfolio/service-worker.js",
     "static/css/2.7b128773.chunk.css.map": "/Portfolio/static/css/2.7b128773.chunk.css.map",
-    "static/css/main.eec31f4f.chunk.css.map": "/Portfolio/static/css/main.eec31f4f.chunk.css.map",
-    "static/media/devgrub.png": "/Portfolio/static/media/devgrub.bf79b675.png",
-    "static/media/evverest.png": "/Portfolio/static/media/evverest.3da49c68.png",
-    "static/media/youtube.png": "/Portfolio/static/media/youtube.0f423153.png"
+    "static/css/main.02d583c5.chunk.css.map": "/Portfolio/static/css/main.02d583c5.chunk.css.map",
+    "static/media/NOT2.png": "/Portfolio/static/media/NOT2.12056409.png",
+    "static/media/android2.jpg": "/Portfolio/static/media/android2.5532ad7f.jpg",
+    "static/media/driving_sim2.png": "/Portfolio/static/media/driving_sim2.06943ede.png",
+    "static/media/giphy.gif": "/Portfolio/static/media/giphy.a3e138fb.gif",
+    "static/media/morty.gif": "/Portfolio/static/media/morty.203d713b.gif",
+    "static/media/morty2.jpg": "/Portfolio/static/media/morty2.75eafce8.jpg",
+    "static/media/neural2.png": "/Portfolio/static/media/neural2.bbba6acb.png",
+    "static/media/react2.png": "/Portfolio/static/media/react2.795eb680.png",
+    "static/media/rein2.png": "/Portfolio/static/media/rein2.882b1384.png"
   }
 }
