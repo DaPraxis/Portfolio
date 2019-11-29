@@ -6,8 +6,14 @@ import Fade from 'react-reveal/Fade';
 import {Tab, Nav, Container} from 'react-bootstrap'
 import Cards from '../components/Cards';
 import {Card, CardTitle, CardText, CardActions, Button, CardMenu, IconButton } from 'react-mdl';
-import avatar from '../assets/images/morty.gif';
+import avatar from '../assets/images/morty2.jpg';
 import active from '../assets/images/giphy.gif';
+import neural from '../assets/images/neural2.png';
+import android from '../assets/images/android2.jpg';
+import div_sim from '../assets/images/driving_sim2.png';
+import react from '../assets/images/react2.png';
+import NOT from '../assets/images/NOT2.png'
+import rein from '../assets/images/rein2.png'
 
 class Project extends React.Component {
 
@@ -18,49 +24,58 @@ class Project extends React.Component {
             items: [
                 {
                     id: 0,
-                    title: 'Dev Grub',
-                    subTitle: 'The cookbook for developers',
-                    imgSrc: avatar,
+                    title: 'Neural Network',
+                    subTitle: 'Using Neural Network learning facial expression, Python, Scikitlearn, Numpy',
+                    imgSrc: neural,
                     activeImg: active,
-                    link: 'https://devgrub.com',
+                    link: 'https://github.com/DaPraxis/Logistic_Regression-Neural_Networks/tree/master/q3_materials',
                     selected: false
                 },
                 {
                     id: 1,
-                    title: 'Garrett Love',
-                    subTitle: 'YouTube channel',
-                    imgSrc: avatar,
+                    title: 'Android Game Center App',
+                    subTitle: 'Game Center, with sliding-tile, 2048, minesweeper; Build on Android/Java, SQLite',
+                    imgSrc: android,
                     activeImg: active,
-                    link: 'https://www.youtube.com/channel/UCxSITxL2JbF229OGCqieVZw',
+                    link: 'https://github.com/DaPraxis/Android_Game_Center',
                     selected: false
                 },
                 {
                     id: 2,
-                    title: 'Evverest',
-                    subTitle: 'A social network for developers',
-                    imgSrc: avatar,
+                    title: 'Personal Portfolio',
+                    subTitle: 'Web page of my own; React.js, JavaScript, HTML, CSS',
+                    imgSrc: react,
                     activeImg: active,
-                    link: 'https://github.com/garrettlove8/evverest',
+                    link: 'https://github.com/DaPraxis/Portfolio',
                     selected: false
                 },
                 {
                     id: 3,
-                    title: 'Evverest',
-                    subTitle: 'A social network for developers',
-                    imgSrc: avatar,
+                    title: 'Driving Simulator',
+                    subTitle: 'Driving Simulation Game for Elder People; Babylon.js, MongoDB, Blender',
+                    imgSrc: div_sim,
                     activeImg: active,
-                    link: 'https://github.com/garrettlove8/evverest',
+                    link: 'https://github.com/DaPraxis/CarSim',
                     selected: false
                 },
                 {
                     id: 4,
-                    title: 'Evverest',
-                    subTitle: 'A social network for developers',
-                    imgSrc: avatar,
+                    title: 'NOT-NOT',
+                    subTitle: 'NOT-NOT game with Finite State Machine on FPGA, verilog',
+                    imgSrc: NOT,
                     activeImg: active,
-                    link: 'https://github.com/garrettlove8/evverest',
+                    link: 'https://github.com/DaPraxis/NOT_NOT_GAME-.v-',
                     selected: false
                 },
+                {
+                    id: 5,
+                    title: 'Reinforcement Learning Puzzle',
+                    subTitle: 'Using reinforcement learning mode train program to solve random puzzle; Python, Numpy, Scikitlearn, Scipy, Jupyter Notebook',
+                    imgSrc: rein,
+                    activeImg: active,
+                    link: 'https://github.com/DaPraxis/Reinforcement_Learning_Puzzle',
+                    selected: false
+                }
             ]
         }
     }

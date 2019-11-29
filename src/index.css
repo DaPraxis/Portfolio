@@ -16,7 +16,9 @@ code {
 .g-card {
   margin:5%;
   padding: 10%;
-  border-radius : 10%
+  border-radius : 10%;
+  margin-bottom: 2%;
+  padding-bottom: 4%;
   /* margin-right: 5%;
   margin-left: 5%;
   margin-bottom: 5%;
@@ -29,7 +31,13 @@ code {
 .g-card-image {
   border-radius: 8%;
   width: 100%;
-  box-shadow: 0px 0px 2px 2px #ccc;
+  height: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* IE 5-7 */
+  filter: alpha(opacity=0);
+  /* modern browsers */
+  /* opacity: 0; */
+  /* box-shadow: 0px 0px 3px 10px #ccc; */
   cursor: pointer;
   position: relative;
 }
@@ -58,8 +66,10 @@ code {
 
 
 .g-card-sub-title {
-  font-size: 16px;
-  margin: 0px;
+  font-size: 18px;
+  margin-top: 120%;
+  padding-top: 10%;
+  margin-bottom: 0;
 }
 
 
