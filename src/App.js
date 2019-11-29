@@ -112,9 +112,9 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      // <Router>
         <Container className="p-0" fluid={true}>
-          <Switch>
+          {/* <Switch>
             <Route exact path="/">
               <NavBarNav slide = {this.state.slide}/>
               <HomePage home = {this.state.home}/>
@@ -125,12 +125,13 @@ class App extends React.Component {
             <Route path="/contact">
               <ContactPage contact = {this.state.contact}/>
             </Route>
-          </Switch>
-          
+          </Switch> */}
+          <NavBarNav slide = {this.state.slide}/>
+          <HomePage home = {this.state.home}/>
           <Footer />
 
         </Container>
-      </Router>
+      // </Router>
     );
   }
 }
