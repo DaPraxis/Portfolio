@@ -9,6 +9,7 @@ import AboutMe from "../components/AboutMe";
 import Fade from 'react-reveal/Fade';
 import Project from '../components/Project';
 import ContactPage from './ContactPage.js';
+import { Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 
 function HomePage(props) {
     return(
@@ -19,7 +20,7 @@ function HomePage(props) {
                         <Hero title={props.home.title} title2={props.home.title2} subTitle={props.home.subTitle} text={props.home.text} intro={props.home.intro} text2={props.home.text2}/>
                         <Row className="justify-content-center">
                             <Col md={8} sm={12}>
-                            <button className="button button-home">
+                            <button className="button button-home" onClick={() => scroll.scrollToBottom()} activeClass="active">
                                 Get In Touch
                             </button>
                             </Col>

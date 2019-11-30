@@ -15,7 +15,7 @@ code {
 
 .g-card {
   margin:5%;
-  padding: 10%;
+  padding: 2%;
   border-radius : 10%;
   margin-bottom: 2%;
   padding-bottom: 4%;
@@ -66,12 +66,37 @@ code {
 
 
 .g-card-sub-title {
-  font-size: 18px;
-  margin-top: 120%;
-  padding-top: 10%;
+  font-size: 100%;
+  margin-top: 0%;
+  padding-left: 5%;
+  padding-top: 0%;
   margin-bottom: 0;
 }
 
+.icons{
+  width: 100%;
+  margin-top: 20%;
+  padding-left: 5%;
+  padding-bottom: 5%;
+  padding-top: 5%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon a{
+  color: #01395e;
+}
+
+.icon button{
+  margin-right: 5%;
+}
+
+.icon{
+  padding-top:5%;
+  margin-right:5%;
+  position: relative;
+}
 
 .success-msg {
   color: #57A773;

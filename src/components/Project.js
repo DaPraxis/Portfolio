@@ -14,8 +14,14 @@ import div_sim from '../assets/images/driving_sim2.png';
 import react from '../assets/images/react2.png';
 import NOT from '../assets/images/NOT2.png'
 import rein from '../assets/images/rein2.png'
+import neural1 from '../assets/images/neural/anger1.png'
+import neural2 from '../assets/images/neural/disgust1.png'
+import neural3 from '../assets/images/neural/eps1.png'
+import neural4 from '../assets/images/neural/eps_ce.png'
+
 
 class Project extends React.Component {
+    
 
     constructor(props) {
         super(props);
@@ -25,60 +31,94 @@ class Project extends React.Component {
                 {
                     id: 0,
                     title: 'Neural Network',
-                    subTitle: 'Using Neural Network learning facial expression, Python, Scikitlearn, Numpy',
+                    subTitle: 'Using Neural Network learning facial expression',
                     imgSrc: neural,
                     activeImg: active,
                     link: 'https://github.com/DaPraxis/Logistic_Regression-Neural_Networks/tree/master/q3_materials',
-                    selected: false
+                    selected: false,
+                    technology: 'Python, Scikitlearn, Numpy',
+                    category: 'Machine Learning',
+                    images: [
+                        { url: neural1 },
+                        { url: neural2 },
+                        { url: neural3 },
+                        { url: neural4 },
+                    ]
                 },
                 {
                     id: 1,
-                    title: 'Android Game Center App',
-                    subTitle: 'Game Center, with sliding-tile, 2048, minesweeper; Build on Android/Java, SQLite',
-                    imgSrc: android,
-                    activeImg: active,
-                    link: 'https://github.com/DaPraxis/Android_Game_Center',
-                    selected: false
-                },
-                {
-                    id: 2,
                     title: 'Personal Portfolio',
-                    subTitle: 'Web page of my own; React.js, JavaScript, HTML, CSS',
+                    subTitle: 'Web page of my own',
+                    technology: 'React.js, JavaScript, HTML, CSS',
                     imgSrc: react,
                     activeImg: active,
                     link: 'https://github.com/DaPraxis/Portfolio',
-                    selected: false
+                    selected: false,
+                    category: "React js Front-End Development",
+                    images: [
+
+                    ]
+                },
+                {
+                    id: 2,
+                    title: 'Driving Simulator',
+                    subTitle: 'Driving Simulation Game for Elder People',
+                    imgSrc: div_sim,
+                    technology: "Babylon.js, MongoDB, Blender",
+                    activeImg: active,
+                    link: 'https://github.com/DaPraxis/CarSim',
+                    selected: false,
+                    category: 'Babylon.js Online Game Development',
+                    images: [
+                        
+                    ]
                 },
                 {
                     id: 3,
-                    title: 'Driving Simulator',
-                    subTitle: 'Driving Simulation Game for Elder People; Babylon.js, MongoDB, Blender',
-                    imgSrc: div_sim,
+                    title: 'Reinforcement Learning Puzzle',
+                    subTitle: 'Using reinforcement learning mode train program to solve random puzzle',
+                    technology: '; Python, Numpy, Scikitlearn, Scipy, Jupyter Notebook',
+                    imgSrc: rein,
                     activeImg: active,
-                    link: 'https://github.com/DaPraxis/CarSim',
-                    selected: false
+                    link: 'https://github.com/DaPraxis/Reinforcement_Learning_Puzzle',
+                    selected: false,
+                    category: 'Machine Learning',
+                    images: [
+                        
+                    ]
                 },
                 {
                     id: 4,
                     title: 'NOT-NOT',
-                    subTitle: 'NOT-NOT game with Finite State Machine on FPGA, verilog',
+                    subTitle: 'NOT-NOT game with Finite State Machine on FPGA',
+                    technology: 'FPGA, Verilog',
                     imgSrc: NOT,
                     activeImg: active,
                     link: 'https://github.com/DaPraxis/NOT_NOT_GAME-.v-',
-                    selected: false
+                    selected: false,
+                    category: 'FPGA Game Development',
+                    images: [
+                        
+                    ]
                 },
                 {
                     id: 5,
-                    title: 'Reinforcement Learning Puzzle',
-                    subTitle: 'Using reinforcement learning mode train program to solve random puzzle; Python, Numpy, Scikitlearn, Scipy, Jupyter Notebook',
-                    imgSrc: rein,
+                    title: 'Game Center Application',
+                    subTitle: 'Game Center, with sliding-tile, 2048, minesweeper',
+                    imgSrc: android,
+                    technology: 'Build on Android/Java, SQLite',
                     activeImg: active,
-                    link: 'https://github.com/DaPraxis/Reinforcement_Learning_Puzzle',
-                    selected: false
-                }
+                    link: 'https://github.com/DaPraxis/Android_Game_Center',
+                    selected: false,
+                    category: 'Android Application',
+                    images: [
+                        
+                    ]
+                },
             ]
         }
     }
+
 
     handleCardClick = (id, card) => {
 
@@ -103,7 +143,7 @@ class Project extends React.Component {
 
     makeItems = (items) => {
         return items.map(item => {
-            return <Col xs={6} md={4}><Cards item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} /></Col>
+            return <Col xs={6} md={4}><Fade><Cards item={item} click={(e => this.handleCardClick(item.id, e))} key={item.id} /></Fade></Col>
         })
     }
 

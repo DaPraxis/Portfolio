@@ -13,7 +13,7 @@ function Footer() {
                         Haoyan Jiang
                     </Col>
                     <Col className="p-0 d-flex justify-content-end" md={3}>
-                        This site was made by Haoyan Jiang 11/15/2019.
+                        Made by Haoyan Jiang 11/20/2019.
                     </Col>
                 </Row>
             </Container>

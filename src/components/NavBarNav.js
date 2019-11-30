@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import {Link} from "react-scroll";
-
+import pdf from '../assets/Haoyan_Jiang_Resume.pdf'
 
 function NavBarNav(props){
     return(
@@ -20,6 +20,10 @@ function NavBarNav(props){
                 <Link className="nav-link scroll" activeClass="active" to="Experience" spy={true} smooth={true} offset={-70} duration= {500}>2. Experience</Link>
                 <Link className="nav-link scroll" activeClass="active" to="Project" spy={true} smooth={true} offset={-70} duration= {500}>3. Project</Link>
                 <Link className="nav-link scroll" activeClass="active" to="ContactMe" spy={true} smooth={true} offset={-70} duration= {500}>4. Contact Me</Link>
+                {/* <button className="nav-link scroll button-Nav">Resume</button> */}
+                <form method="get" action={pdf}>
+                    <button type="submit" className="nav-link scroll button-Nav"> ~Resume~ </button>
+                </form>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

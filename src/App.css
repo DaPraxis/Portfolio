@@ -84,6 +84,23 @@
   background-color:#01395e;
   color: #05A58D
 }
+
+.button-Nav{
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+	display: inline-block;
+  border: 1.5px solid #05A58D;
+  color: #01395e;
+  background-color: #F0F8FF;
+  font-weight: bold;
+  font-size: 90%;
+  /* padding-left: 5%; */
+}
+
+.button-Nav:hover{
+  color: #01395e;
+}
   
 .Nav{
   -webkit-transition-duration: 0.4s; 
@@ -306,12 +323,12 @@ transform: translate3d(0,-10%,0);
   color: #fff;
   text-align: center;
   position: relative;
-  font-size: 17px;
-  padding: 10px;
+  font-size: 100%;
+  padding: 5%;
   background: rgba(0, 0, 0, 0.6);
-float: left;
-margin: 0px;
-display: inline-block;
+  float: left;
+  margin: 0px;
+  display: inline-block;
 }
 
 .hovereffect2 a.info {
@@ -342,8 +359,8 @@ color: #252d31;
 
 .hovereffect2 h2,
 .hovereffect2 p.icon-links a {
--webkit-transition: -webkit-transform 0.35s;
-transition: transform 0.35s;
+-webkit-transition: -webkit-transform 0.7s;
+transition: transform 0.7s;
 -webkit-transform: translate3d(0,200%,0);
 transform: translate3d(0,200%,0);
 visibility: visible;

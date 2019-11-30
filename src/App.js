@@ -33,7 +33,7 @@ class App extends React.Component {
       home: {
         title: 'Max Jiang',
         text: 'Fourth-year undergraduate, major in computer science & statistics in the University of Toronto. Specializing in Machine Learning & Software Engineering & Web-Development',
-        title2: 'Work Hard & Be Nice to People',
+        title2: 'WORK. PLAY. LIVE',
         intro: "My name is:",
         text2: 'Toronto, ON, Canada',
         about:{
