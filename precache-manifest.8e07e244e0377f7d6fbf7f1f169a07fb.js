@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "394d2797cabf6e2b90406c3bce851c23",
+    "revision": "df6e327f7ed6cbec94d239f73b5989a8",
     "url": "/Portfolio/index.html"
   },
   {
-    "revision": "8d8e3e66c1bb67815a7c",
+    "revision": "3c4ce093d30c75749b93",
     "url": "/Portfolio/static/css/2.42de7e0f.chunk.css"
   },
   {
-    "revision": "94ca7bf9dcb5cb11e05d",
-    "url": "/Portfolio/static/css/main.02d583c5.chunk.css"
+    "revision": "87791d4c23dfbe76e80c",
+    "url": "/Portfolio/static/css/main.e05d8930.chunk.css"
   },
   {
-    "revision": "8d8e3e66c1bb67815a7c",
-    "url": "/Portfolio/static/js/2.31bec451.chunk.js"
+    "revision": "3c4ce093d30c75749b93",
+    "url": "/Portfolio/static/js/2.53f6f4c0.chunk.js"
   },
   {
-    "revision": "94ca7bf9dcb5cb11e05d",
-    "url": "/Portfolio/static/js/main.0bfb5ebb.chunk.js"
+    "revision": "87791d4c23dfbe76e80c",
+    "url": "/Portfolio/static/js/main.14f6388c.chunk.js"
   },
   {
     "revision": "6b64d540f1308ee928ad",
     "url": "/Portfolio/static/js/runtime~main.132fbc8c.js"
+  },
+  {
+    "revision": "6f5426ac95cd5a9875f58ee149ba8556",
+    "url": "/Portfolio/static/media/Haoyan_Jiang_Resume.6f5426ac.pdf"
   },
   {
     "revision": "120564092e12c44e6321c3f60e56d981",
@@ -32,12 +36,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio/static/media/android2.5532ad7f.jpg"
   },
   {
+    "revision": "9c51c109b2c5f96683cf23df0ea21f0d",
+    "url": "/Portfolio/static/media/anger1.9c51c109.png"
+  },
+  {
+    "revision": "0fe4d5f6f270ea00c1e55dc1a5b36247",
+    "url": "/Portfolio/static/media/disgust1.0fe4d5f6.png"
+  },
+  {
     "revision": "06943edec5133e8cce39e280b0b69100",
     "url": "/Portfolio/static/media/driving_sim2.06943ede.png"
   },
   {
+    "revision": "95a2f9248428e983423cb37523f9596b",
+    "url": "/Portfolio/static/media/eps1.95a2f924.png"
+  },
+  {
+    "revision": "ea19fc8616497dff620d64b69195dcf8",
+    "url": "/Portfolio/static/media/eps_ce.ea19fc86.png"
+  },
+  {
     "revision": "a3e138fb032119b0d3e159dcd2496a7e",
     "url": "/Portfolio/static/media/giphy.a3e138fb.gif"
+  },
+  {
+    "revision": "76d344f08412543c74ccd1fb2493d607",
+    "url": "/Portfolio/static/media/github.76d344f0.svg"
   },
   {
     "revision": "203d713b88e864eae11b88b206cb6a22",
