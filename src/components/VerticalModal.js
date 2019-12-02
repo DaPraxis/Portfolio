@@ -12,12 +12,14 @@ function MyVerticallyCenteredModal(props) {
             </Modal.Header>
             <Modal.Body>
                 <h4>{props.item.title}</h4>
-                <div className='imgContainer' style={{display: 'flex', justifyContent: 'center'}}>
+                <div className='imgContainer' style={{display: 'flex', justifyContent: 'center', marginTop: '5%', marginBottom: '5%'}}>
                     {/* <img src={props.item.imgSrc} style={{width:'100%'}}/> */}
                     <SimpleImageSlider
-                    width={400}
-                    height={300}
+                    width={550}
+                    height={350}
                     images={props.item.images}
+                    showBullets={false}
+                    navStyle={2}
                 />
                 </div>
                 <p>

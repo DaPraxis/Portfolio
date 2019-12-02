@@ -18,7 +18,15 @@ import neural1 from '../assets/images/neural/anger1.png'
 import neural2 from '../assets/images/neural/disgust1.png'
 import neural3 from '../assets/images/neural/eps1.png'
 import neural4 from '../assets/images/neural/eps_ce.png'
-
+import neural_act1 from '../assets/images/neural/section1.gif'
+import neural_act2 from '../assets/images/neural/section2.gif'
+import personal1 from '../assets/images/personal/frony.PNG'
+import rein1 from '../assets/images/machine_learn/c1.PNG'
+import rein2 from '../assets/images/machine_learn/p1.PNG'
+import rein3 from '../assets/images/machine_learn/p2.PNG'
+import rein4 from '../assets/images/machine_learn/p3.PNG'
+import rein5 from '../assets/images/machine_learn/p4.PNG'
+import ds1 from '../assets/images/ds/ds.gif'
 
 class Project extends React.Component {
     
@@ -39,6 +47,8 @@ class Project extends React.Component {
                     technology: 'Python, Scikitlearn, Numpy',
                     category: 'Machine Learning',
                     images: [
+                        { url: neural_act1},
+                        { url: neural_act2},
                         { url: neural1 },
                         { url: neural2 },
                         { url: neural3 },
@@ -56,7 +66,7 @@ class Project extends React.Component {
                     selected: false,
                     category: "React js Front-End Development",
                     images: [
-
+                        { url: personal1},
                     ]
                 },
                 {
@@ -70,7 +80,7 @@ class Project extends React.Component {
                     selected: false,
                     category: 'Babylon.js Online Game Development',
                     images: [
-                        
+                        {url: ds1}
                     ]
                 },
                 {
@@ -84,7 +94,11 @@ class Project extends React.Component {
                     selected: false,
                     category: 'Machine Learning',
                     images: [
-                        
+                        { url: rein2 },
+                        { url: rein3 },
+                        { url: rein4 },
+                        { url: rein5 },
+                        { url: rein1 },
                     ]
                 },
                 {
