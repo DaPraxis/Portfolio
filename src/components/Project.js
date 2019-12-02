@@ -27,7 +27,7 @@ import rein3 from '../assets/images/machine_learn/p2.PNG'
 import rein4 from '../assets/images/machine_learn/p3.PNG'
 import rein5 from '../assets/images/machine_learn/p4.PNG'
 import ds1 from '../assets/images/ds/ds.gif'
-
+import wait from '../assets/images/in_process2.png'
 class Project extends React.Component {
     
 
@@ -112,7 +112,7 @@ class Project extends React.Component {
                     selected: false,
                     category: 'FPGA Game Development',
                     images: [
-                        
+                        {url: wait}
                     ]
                 },
                 {
@@ -126,7 +126,7 @@ class Project extends React.Component {
                     selected: false,
                     category: 'Android Application',
                     images: [
-                        
+                        {url: wait}
                     ]
                 },
             ]
