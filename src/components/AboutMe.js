@@ -2,7 +2,7 @@ import React, { Children } from 'react';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Hero from './Hero';
-import avatar from '../assets/images/morty.gif';
+import avatar from '../assets/images/face.jpg';
 
 function AboutMe(props) {
     return(
